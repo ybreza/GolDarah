@@ -1,5 +1,10 @@
 # Golongan Darah
 
+[![Situs](https://img.shields.io/badge/website-ybreza.github.io%2FGolDarah-2563eb)](https://ybreza.github.io/GolDarah/)
+[![Rilis](https://img.shields.io/badge/rilis-v3.0.0-e11d48)](https://github.com/ybreza/GolDarah/releases/tag/v3.0.0)
+
+**Situs langsung:** https://ybreza.github.io/GolDarah
+
 ![Logo](https://user-images.githubusercontent.com/35470865/40240381-a517c83a-5ae2-11e8-84f5-e45ce09f56bf.png)
 
 Aplikasi penentuan golongan darah dari sisi sifat dan karakter, memakai 67 pertanyaan yang disusun dari dua sumber ilmiah pada folder `pdf`. Seluruh perhitungan berjalan di sisi klien dengan HTML, CSS, dan JavaScript murni.
@@ -15,10 +20,11 @@ Aplikasi penentuan golongan darah dari sisi sifat dan karakter, memakai 67 perta
 
 ## Menjalankan
 
-Aplikasi ini statis, tidak memerlukan server, PHP, atau `npm install`.
+Aplikasi ini statis, tidak memerlukan server, PHP, atau `npm install`. Buka `index.html` langsung di
+browser, atauduh lewat alamat daring:
 
 ```
-Buka index.html langsung di browser
+https://ybreza.github.io/GolDarah
 ```
 
 Alternatif memakai server lokal:
@@ -29,9 +35,12 @@ npx serve .
 
 ## Cara Update
 
-Folder lokal ini adalah sumber utama. Setelah selesai mengubah berkas, cukup klik ganda `deploy.cmd`.
-Skrip tersebut akan menambahkan perubahan, membuat commit, mengambil pembaruan dari GitHub bila ada,
-lalu mengirim perubahan Anda ke branch `master`.
+Folder lokal ini adalah sumber utama. Situs daring mengikuti branch `master`, jadi setiap `deploy.cmd`
+juga memperbarui GitHub Pages secara otomatis.
+
+Setelah selesai mengubah berkas, cukup klik ganda `deploy.cmd`. Skrip tersebut akan menambahkan
+perubahan, membuat commit, mengambil pembaruan dari GitHub bila ada, lalu mengirim perubahan Anda ke
+branch `master`.
 
 Kalau lebih suka memakai terminal:
 
