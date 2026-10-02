@@ -27,6 +27,29 @@ Alternatif memakai server lokal:
 npx serve .
 ```
 
+## Cara Update
+
+Folder lokal ini adalah sumber utama. Setelah selesai mengubah berkas, cukup klik ganda `deploy.cmd`.
+Skrip tersebut akan menambahkan perubahan, membuat commit, mengambil pembaruan dari GitHub bila ada,
+lalu mengirim perubahan Anda ke branch `master`.
+
+Kalau lebih suka memakai terminal:
+
+```bash
+git add -A
+git commit -m "pesan singkat"
+git pull --rebase origin master
+git push origin master
+```
+
+Untuk menerima perubahan orang lain tanpa mengubah apa pun:
+
+```bash
+git pull
+```
+
+Branch `master` sudah terhubung ke `origin/master`, jadi tidak perlu mengatur remote lagi.
+
 ## Struktur Proyek
 
 ```
@@ -38,9 +61,10 @@ npx serve .
 │   ├── data.js     Bobot ciri, pertanyaan, dan data hasil
 │   └── app.js      Render kuis, mesin skor, dan interaksi
 ├── pdf
-│   ├── DATA (1).pdf    Jurnal ANALISIS Indonesia
+│   ├── DATA (1).pdf    Jurnal Nawata (2014)
 │   ├── DATA (1).xlsx   Data 148 responden
-│   └── DATA (2).pdf    Jurnal Kanazawa
+│   └── DATA (2).pdf    Jurnal Kanazawa (2020)
+├── deploy.cmd      Skrip kirim perubahan ke GitHub
 ├── Contributing.md
 ├── LICENSE.md
 └── README.md
