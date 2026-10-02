@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Golongan Darah — Tes Sifat &amp; Karakter</title>
+  <meta name="description"
+    content="Tes golongan darah gratis berdasarkan sifat dan karakter, memakai 67 pertanyaan dari studi ilmiah tentang ABO dan kepribadian.">
+  <meta name="theme-color" content="#0a1020">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" crossorigin="anonymous"
+    referrerpolicy="no-referrer">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/svgs/solid/droplet.svg">
+</head>
+
+<body>
+  <a class="skip-link" href="#tes">Langsung ke kuis</a>
+
+  <header class="topbar" id="top">
+    <div class="container topbar__inner">
+      <a class="brand" href="#top">
+        <span class="brand__mark" aria-hidden="true"><i class="fa-solid fa-dna"></i></span>
+        <span class="brand__text">Golongan<strong>Darah</strong></span>
+      </a>
+
+      <nav class="nav" id="nav" aria-label="Navigasi utama">
+        <a href="#top">Beranda</a>
+        <a href="#cara">Cara Kerja</a>
+        <a href="#tes">Tes</a>
+        <a href="#sumber">Sumber</a>
+        <a href="#kontak">Kontak</a>
+        <a class="btn btn--primary btn--sm nav__cta" href="#tes">Mulai Tes</a>
+      </nav>
+
+      <button class="nav-toggle" id="navToggle" type="button" aria-label="Buka menu" aria-expanded="false"
+        aria-controls="nav">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="beranda">
+      <div class="container hero__inner">
+        <p class="pill">
+          <span class="pill__dot" aria-hidden="true"></span>
+          67 pertanyaan &middot; 100% gratis &middot; Tanpa pendaftaran
+        </p>
+        <h1 class="hero__title">
+          Temukan golongan darah Anda
+          <span>dari sifat &amp; karakter</span>
+        </h1>
+        <p class="hero__lead">
+          Jawab pertanyaan tentang kebiasaan dan karakter Anda. Sistem akan menghitung kecocokan Anda
+          dengan ciri khas tiap golongan darah, lalu menampilkan profilnya.
+        </p>
+        <div class="hero__actions">
+          <a class="btn btn--primary btn--lg" href="#tes">Mulai Tes Sekarang</a>
+          <a class="btn btn--ghost btn--lg" href="#sumber">
+            <i class="fa-solid fa-book-open"></i>
+            Lihat Sumber Data
+          </a>
+        </div>
+        <dl class="stats">
+          <div class="stats__item">
+            <dt><i class="fa-solid fa-list-check"></i> Pertanyaan</dt>
+            <dd>67 item</dd>
+          </div>
+          <div class="stats__item">
+            <dt><i class="fa-solid fa-stopwatch"></i> Waktu</dt>
+            <dd>5 menit</dd>
+          </div>
+          <div class="stats__item">
+            <dt><i class="fa-solid fa-shield-heart"></i> Data</dt>
+            <dd>Tersimpan lokal</dd>
+          </div>
+        </dl>
+      </div>
+    </section>
+
+    <section class="section" id="cara">
+      <div class="container">
+        <header class="section__head">
+          <p class="section__eyebrow">Cara Kerja</p>
+          <h2 class="section__title">Tiga langkah sederhana</h2>
+          <p class="section__text">
+            Semua jawaban diproses di perangkat Anda. Tidak ada data yang dikirim ke server mana pun.
+          </p>
+        </header>
+
+        <ol class="steps">
+          <li class="card step">
+            <span class="step__icon" aria-hidden="true"><i class="fa-solid fa-pen-to-square"></i></span>
+            <h3>Jawab pertanyaan</h3>
+            <p>Pilih tingkat kesesuaian dari 1 sampai 5 untuk setiap pernyataan.</p>
+          </li>
+          <li class="card step">
+            <span class="step__icon" aria-hidden="true"><i class="fa-solid fa-diagram-project"></i></span>
+            <h3>Sistem menghitung bobot</h3>
+            <p>Setiap jawaban ditimbang terhadap ciri khas tiap golongan darah.</p>
+          </li>
+          <li class="card step">
+            <span class="step__icon" aria-hidden="true"><i class="fa-solid fa-award"></i></span>
+            <h3>Lihat hasil lengkap</h3>
+            <p>Anda mendapat golongan terdekat beserta ciri dan profilnya.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section section--alt" id="tes">
+      <div class="container">
+        <header class="section__head">
+          <p class="section__eyebrow">Kuis</p>
+          <h2 class="section__title">Jawab sesuai diri Anda</h2>
+          <p class="section__text">
+            Kerjakan <strong id="quizTotal">67</strong> pertanyaan. Gunakan bilah progres di bawah untuk
+            melihat sisa waktu menjawab.
+          </p>
+        </header>
+
+        <div class="progress" id="progress">
+          <div class="progress__meta">
+            <span id="progressCounter">0 dari 67 terjawab</span>
+            <span id="progressPercent">0%</span>
+          </div>
+          <div class="progress__track">
+            <span class="progress__bar" id="progressBar"></span>
+          </div>
+        </div>
+
+        <p class="notice notice--inline" id="quizWarning" hidden></p>
+
+        <form class="quiz" id="quizForm" novalidate>
+        </form>
+
+        <div class="quiz__footer">
+          <p class="quiz__hint">
+            <i class="fa-solid fa-circle-info"></i>
+            Pilih jawaban yang paling sering Anda lakukan, bukan yang paling ingin Anda lakukan.
+          </p>
+          <button class="btn btn--primary btn--lg" type="submit" form="quizForm" id="submitBtn" disabled>
+            <i class="fa-solid fa-magnifying-glass-chart"></i>
+            Lihat Hasil Saya
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="hasil" hidden>
+      <div class="container">
+        <article class="result" id="result">
+          <header class="result__head">
+            <span class="result__badge" id="resultBadge">A</span>
+            <div class="result__headline">
+              <p class="result__label">Golongan terdekat</p>
+              <h2 class="result__name" id="resultName"></h2>
+              <p class="result__tagline" id="resultTagline"></p>
+            </div>
+            <p class="result__share" id="resultShare"></p>
+          </header>
+
+          <p class="result__description" id="resultDescription"></p>
+
+          <div class="panel">
+            <p class="panel__title">
+              <i class="fa-solid fa-chart-simple"></i>
+              Perbandingan semua golongan
+            </p>
+            <div class="ranking" id="resultRanking"></div>
+          </div>
+
+          <div class="panel">
+            <p class="panel__title">
+              <i class="fa-solid fa-tags"></i>
+              Ciri yang paling terindikasi
+            </p>
+            <ul class="chips" id="resultFeatures"></ul>
+          </div>
+
+          <div class="panel">
+            <p class="panel__title">
+              <i class="fa-solid fa-list-check"></i>
+              Ciri khas golongan tersebut
+            </p>
+            <ul class="traits" id="resultTraits"></ul>
+          </div>
+
+          <div class="panel">
+            <p class="panel__title">
+              <i class="fa-solid fa-gauge-high"></i>
+              Profil gaya hidup Anda
+            </p>
+            <div class="bars" id="resultProfile"></div>
+          </div>
+
+          <p class="notice">
+            <i class="fa-solid fa-triangle-exclamation"></i>
+            Hasil ini dihitung dari jawaban karakter, bukan pemeriksaan laboratorium. Belum ada bukti ilmiah
+            kuat bahwa golongan darah menentukan kepribadian, sehingga hasil ini sebaiknya dibaca sebagai
+            hiburan dan gambaran diri, bukan diagnosis.
+          </p>
+
+          <div class="result__actions">
+            <button class="btn btn--primary" type="button" id="restartBtn">
+              <i class="fa-solid fa-rotate-left"></i>
+              Ulangi Tes
+            </button>
+            <a class="btn btn--ghost btn--dark" href="#top">
+              <i class="fa-solid fa-arrow-up"></i>
+              Kembali ke Atas
+            </a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section section--alt" id="sumber">
+      <div class="container">
+        <header class="section__head">
+          <p class="section__eyebrow">Sumber Data</p>
+          <h2 class="section__title">Dari mana pertanyaannya</h2>
+          <p class="section__text">
+            Seluruh butir pertanyaan dan bobotnya diturunkan dari berkas pada folder <code>pdf</code>.
+          </p>
+        </header>
+
+        <ul class="sources" id="sourceList"></ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer" id="kontak">
+    <div class="container footer__inner">
+      <div>
+        <a class="brand brand--footer" href="#top">
+          <span class="brand__mark" aria-hidden="true"><i class="fa-solid fa-dna"></i></span>
+          <span class="brand__text">Golongan<strong>Darah</strong></span>
+        </a>
+        <p class="footer__tagline">
+          Aplikasi penentuan golongan darah dari sisi sifat dan karakter, dibangun dengan HTML, CSS, dan
+          JavaScript murni tanpa framework.
+        </p>
+      </div>
+
+      <div>
+        <h3 class="footer__title">Pengembang</h3>
+        <ul class="contact-list">
+          <li><i class="fa-solid fa-user"></i> Reza Rizqullah</li>
+          <li><i class="fa-solid fa-location-dot"></i> Blang Jruen, Aceh</li>
+          <li>
+            <i class="fa-solid fa-phone"></i>
+            <a href="tel:+6282367285000">0823 6728 5000</a>
+          </li>
+          <li>
+            <i class="fa-solid fa-envelope"></i>
+            <a href="mailto:android.ac3h@gmail.com">android.ac3h@gmail.com</a>
+          </li>
+          <li>
+            <i class="fa-brands fa-github"></i>
+            <a href="https://github.com/ybreza/GolDarah" rel="noopener noreferrer" target="_blank">
+              github.com/ybreza/GolDarah
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="container footer__bottom">
+      <p>&copy; <span id="year">2026</span> Reza Rizqullah. Hak cipta dilindungi.</p>
+    </div>
+  </footer>
+
+  <button class="to-top" id="toTop" type="button" aria-label="Kembali ke atas">
+    <i class="fa-solid fa-chevron-up"></i>
+  </button>
+
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+</body>
+
+</html>
