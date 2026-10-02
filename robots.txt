@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://ybreza.github.io/GolDarah/sitemap.xml
