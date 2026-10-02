@@ -282,7 +282,7 @@ code {
   isolation: isolate;
   padding: clamp(56px, 11vw, 118px) 0 clamp(48px, 9vw, 96px);
   background-color: #0a1020;
-  background-image: url("https://images.unsplash.com/photo-1628595351029-c2c175c35524?auto=format&fit=crop&w=1800&q=70");
+  background-image: url("https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?auto=format&fit=crop&w=1800&q=70");
   background-position: center;
   background-size: cover;
 }
